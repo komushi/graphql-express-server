@@ -15,8 +15,8 @@ http://localhost:3000/graphiql
 ```
 {
   getAllBooks {
-    title,
-    author,
+    title
+    author
     gender
   }
 }
