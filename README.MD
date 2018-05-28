@@ -13,7 +13,7 @@ http://localhost:3000/graphiql
 
 ### 1-3. Run the following queries
 ```
-{
+query getAllBooks{
   getAllBooks {
     title
     author
@@ -23,8 +23,8 @@ http://localhost:3000/graphiql
 ```
 
 ```
-{
-  getBooks(gender:"F") {
+query getBooksByGender{
+  getBooksByGender(gender:"Female") {
     title
     author
     gender

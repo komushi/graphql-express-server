@@ -8,12 +8,12 @@ const initBooks = [
   {
     title: "Harry Potter and the Sorcerer's stone",
     author: 'J.K. Rowling',
-    gender: 'F'
+    gender: 'Female'
   },
   {
     title: 'Jurassic Park',
     author: 'Michael Crichton',
-    gender: 'M'
+    gender: 'Male'
   },
 ];
 
@@ -21,7 +21,7 @@ const initBooks = [
 const typeDefs = `
   type Query { 
     getAllBooks: [Book]
-    getBooks(gender: String): [Book]
+    getBooksByGender(gender: String): [Book]
   }
   type Book { title: String, author: String, gender: String }
 `;
@@ -32,8 +32,7 @@ const resolvers = {
     getAllBooks: () => {
       return initBooks;
     },
-    getBooks: function (rootObj, {gender}) {
-      console.log(gender);
+    getBooksByGender: function (rootObj, {gender}) {
       return [initBooks[0]];
     }
   }
