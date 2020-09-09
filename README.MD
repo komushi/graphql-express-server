@@ -6,9 +6,9 @@ $ npm install
 $ npm start
 ```
 
-### 1-2. Open the following url for GraphiQL
+### 1-2. Open the following url for Playground
 ```
-http://localhost:3000/graphiql
+http://localhost:3000/graphql
 ```
 
 ### 1-3. Run the following queries
